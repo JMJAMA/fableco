@@ -148,7 +148,7 @@ function linesTop() {
       let cellRight = dist(mouseX,mouseY,x*x1,y*y1);
       let cellBottom = dist(mouseX,mouseY,x*x1,y*y1);
       
-      nostroke();
+      noStroke();
       fill(255,255,255,200-(cellCenter/2));
       //line(x*x1,y*y1,x*x1,y*y1-(cellBottom/30)*1.2);
       push();
