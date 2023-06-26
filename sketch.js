@@ -148,15 +148,15 @@ function linesTop() {
       let cellRight = dist(mouseX,mouseY,x*x1,y*y1);
       let cellBottom = dist(mouseX,mouseY,x*x1,y*y1);
       
-      
-      stroke(255,255,255,200-(cellCenter/2));
+      nostroke();
+      fill(255,255,255,200-(cellCenter/2));
       //line(x*x1,y*y1,x*x1,y*y1-(cellBottom/30)*1.2);
       push();
       
       rectMode(CENTER);
       rect(CENTER);
-      rect(CtileW/2+x*x1,y*y1,50-cellCenter/8,0.5);
-      rect(+CtileW+x*x1,+CtileH/2+y*y1,0.5,50+-cellCenter/8);
+      rect(CtileW/2+x*x1,y*y1,50-cellCenter/8,1);
+      rect(+CtileW+x*x1,+CtileH/2+y*y1,1,50+-cellCenter/8);
       //line(x*x1+-CtileH+(cellBottom/0),y*y1,x*x1,y*y1);
       pop();
       
