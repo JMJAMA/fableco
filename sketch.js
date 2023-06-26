@@ -35,17 +35,21 @@ function draw() {
   linesBottom();
   linesTop();
 
-   let vidSize = map(mouseX,0,width,0,200);
+  let vidSize = map(mouseX,0,width,0,200);
+  let vidSizeY = map(mouseY,0,height,150,500);
+  let vidWindowX = map(mouseX,0,width,350,width-(350-(vidSize/2)));
+  let vidWindowY = map(mouseY,0,height,350,height-(450-(vidSize/2)));
+  
 
-  let sx = 700-(vidSize/2);
-  let sy = 500-(vidSize/2);
+  let sx = (948-100)-vidSize/4;
+  let sy = 148+vidSizeY/2.6;
   let sw = 250;
   let sh = 325;
 
-  let dx = 948-(vidSize/2);
-  let dy = 298-(vidSize/2);
-  let dw = 350+vidSize;
-  let dh = 425+vidSize;
+  let dx = (948-100)-vidSize;
+  let dy = 285-vidSize;
+  let dw = 350+(vidSize*1.5);
+  let dh = 425+(vidSize*1.5);
 
   let al =map(mouseX,0,width,0,255);
 
